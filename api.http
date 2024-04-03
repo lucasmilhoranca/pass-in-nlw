@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": "Evento novo",
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/15a4392b-2755-4663-94e7-160991143edf/attendees
+Content-Type: application/json
+
+{
+    "name": "Lucas Milhorança",
+    "email": "lucas2@lucas.com.br"
+}
+
+###
+
+GET http://localhost:3333/events/f0668504-5a56-498e-9429-ba50e5373475
+
+###
+
+GET http://localhost:3333/attendees/1/badge
+
+###
+
+GET http://localhost:3333/attendees/6/check-in
+
+###
+
+GET http://localhost:3333/events/15a4392b-2755-4663-94e7-160991143edf/attendees
